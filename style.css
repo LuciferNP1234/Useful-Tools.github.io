@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff99ad;
+    background-image:
+        radial-gradient(at 86% 45%, hsla(22, 70%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 21% 96%, hsla(294, 82%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 16% 5%, hsla(193, 63%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 94% 56%, hsla(352, 76%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 66% 76%, hsla(160, 73%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 2%, hsla(32, 97%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 49% 76%, hsla(59, 86%, 79%, 1) 0px, transparent 50%);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-attachment: fixed;
+  text-align: center; /* Align the text to the center */
+  padding: 20px 0; /* Add some top and bottom padding for space */
+  z-index: 999; /* Ensure header appears above other content */
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tool {
+    width: calc(50% - 10px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tool:hover {
+    background-color: #f0f0f0;
+}
+
+.tool i {
+    font-size: 3rem;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup button.btn {
+    margin-top: 20px;
+    background-color: #303f9f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup button.btn:hover {
+    background-color: #3f51b5;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center; /* Align the text to the center */
+  padding: 20px 0; /* Add some top and bottom padding for space */
+  z-index: 999; /* Ensure header appears above other content */
+}
+
+.dashboard-text {
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 36px; /* Increased font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #303f9f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3f51b5;
+}
+
+.subscribe-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background-color: #303f9f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #3f51b5;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-text {
+    margin-top: 5px;
+}
+
+.subscribe-container {
+    margin-bottom: 20px;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background-color: #303f9f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #3f51b5; /* Darker shade for hover effect */
+}
+
+
+/* Custom styling to adjust vertical alignment of icons */
+.tool i {
+  vertical-align: middle;
+}
+
+/* Style for the Next Page button */
+.next-page-container {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 40px; /* Increased margin bottom to create more space */
+}
+
+.next-page-btn {
+  display: inline-block;
+  background-color: #303f9f;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.next-page-btn:hover {
+  background-color: #3f51b5;
+}
+
+ /* Custom styling to adjust vertical alignment of icons */
+    .tool i {
+      vertical-align: middle;
+    }

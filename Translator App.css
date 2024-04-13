@@ -1,0 +1,233 @@
+
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background: #06283D;
+      background-image:
+        radial-gradient(at 86% 45%, hsla(22, 70%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 21% 96%, hsla(294, 82%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 16% 5%, hsla(193, 63%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 94% 56%, hsla(352, 76%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 66% 76%, hsla(160, 73%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 2%, hsla(32, 97%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 49% 76%, hsla(59, 86%, 79%, 1) 0px, transparent 50%);
+}
+
+.container {
+  max-width: 690px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+}
+
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.text-input .to-text {
+  border-radius: 0px;
+  border-left: 1px solid #ccc;
+}
+
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.text-input textarea::placeholder {
+  color: #b7b6b6;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+
+.controls .row .icons {
+  width: 38%;
+}
+
+.controls .row .icons i {
+  width: 50px;
+  color: #adadad;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  justify-content: center;
+}
+
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+
+.controls .row select {
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  padding-left: 5px;
+}
+
+.text-input textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+.controls .row select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.text-input textarea::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.controls .row select::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+.controls .exchange {
+  color: #adadad;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.controls i:active {
+  transform: scale(0.9);
+}
+
+.container button {
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #06283D;
+}
+
+@media (max-width: 660px) {
+  .container {
+    padding: 20px;
+  }
+
+  .wrapper .text-input {
+    flex-direction: column;
+  }
+
+  .text-input .to-text {
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+  }
+
+  .text-input textarea {
+    height: 200px;
+  }
+
+  .controls .row .icons {
+    display: none;
+  }
+
+  .container button {
+    padding: 13px;
+    font-size: 16px;
+  }
+
+  .controls .row select {
+    font-size: 16px;
+  }
+
+  .controls .exchange {
+    font-size: 14px;
+  }
+}
+
+.go-back-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.go-back-link {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.go-back-link:hover {
+    text-decoration: underline;
+}
+
+.go-back-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.go-back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #303f9f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-link:hover {
+    background-color: #3f51b5;
+}
+
+

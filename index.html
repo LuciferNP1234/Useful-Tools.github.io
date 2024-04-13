@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Useful Tools | Dashboard</title>
+  <meta name="description" content="A collection of useful tools for various purposes.">
+  <meta name="keywords" content="tools, generator, translator, text to speech, QR code, useful, Clicker game, clicking adventure, tap game, idle game, incremental game, casual gaming, clicker craze, endless clicking, upgrades, boss battles, customizable characters, addictive gameplay, strategy game, leaderboard competition, action-packed clicking, clicker frenzy, clicker mania, clicking frenzy, clicking mania, clicking excitement, tap frenzy, tap mania, tap excitement, idle frenzy, idle mania, idle excitement, incremental frenzy, incremental mania, incremental excitement, casual clicker, clicker rush, clicker challenge, clicker quest, clicker journey, clicker experience, clicker mastery, clicker adventure, clicker discovery, clicker exploration, clicker conquest, clicker triumph, clicker victory, clicker dominance, clicker strategy, clicker tactics">
+  <meta property="og:url" content="https://best-useful-tools-by-twmv3.tiiny.site/">
+  <link rel="canonical" href="https://best-useful-tools-by-twmv3.tiiny.site/">
+    <!-- Language Tag -->
+  <meta http-equiv="Content-Language" content="en">
+  <!-- Theme Color Tag -->
+  <meta name="theme-color" content="#f2f2f2">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://static.thenounproject.com/png/1781890-200.png">
+  <meta name="author" content="twmv3">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
+<body>
+  <header>
+    <div class="dashboard-text">--| DASHBOARD |--</div>
+  </header>
+  <div class="container">
+    <div class="tool" onclick="showPopup('Password Generator', 'This tool helps you generate strong passwords.')">
+      <i class='bx bxs-key'></i>
+      <span>Password Generator</span>
+       <a class="btn" id="goToToolButton" href="Pass Generator.html">Go to the tool</a>
+    </div>
+    <div class="tool" onclick="showPopup('QR Code Generator', 'This tool generates QR codes for various purposes.')">
+      <i class='bx bxs-barcode'></i>
+      <span>QR Code Generator</span>
+       <a class="btn" id="goToToolButton" href="QR Code Generator.html">Go to the tool</a>
+    </div>
+    <!-- Add Translator App tool here -->
+    <div class="tool" onclick="showPopup('Translator App', 'This tool allows you to translate text to different languages.')">
+      <img src="https://i.ibb.co/hFN6YN1/translate-2.png" width="35" height="35" alt="Translator App">
+      <span>Translator App</span>
+       <a class="btn" id="goToToolButton" href="Translator App.html">Go to the tool</a>
+    </div>
+    <!-- Add Text To Speech App tool here -->
+    <div class="tool" onclick="showPopup('Text To Speech App', 'This tool converts text into speech.')">
+      <i class='bx bx-message-square-detail'></i>
+      <span>Text To Speech App</span>
+       <a class="btn" id="goToToolButton" href="Text To Speech App.html">Go to the tool</a>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
+    <div class="popup" id="popup" onclick="event.stopPropagation()">
+      <div class="popup-content">
+        <h2 id="popupTitle"></h2>
+        <p id="popupDescription"></p>
+      </div>
+    </div>
+  </div>
+
+<footer>
+
+     
+    <div class="footer-text" style="color: white; font-weight: bolder; text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;">Website made by <span style="font-weight: bolder; color: red">twmv3</span></div>
+    <div class="footer-text" style="color: white; font-weight: bolder; text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;">Discord: <span style="font-weight: bolder; color: yellow">twmv3</span></div>
+    <!-- Subscribe button -->
+    <div class="subscribe-container">
+        <a href="https://www.youtube.com/channel/UCJqXkOwrq7uBn-sn_Fvce9Q?sub_confirmation=1" target="_blank" class="subscribe-btn">SUBSCRIBE TO <span style="color: white; font-weight: bolder;">AsmrProg</span></a>
+    </div>
+     <div class="subscribe-container"><a href="https://www.youtube.com/TimeWarpMusicVibes" target="_blank" class="subscribe-btn">VISIT OUR CHANNEL</a></div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
